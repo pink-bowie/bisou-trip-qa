@@ -1,0 +1,200 @@
+/*TC04*/
+
+:root {
+  --marca-bordo: #612E3D;
+  --marca-verde: #667A6A;
+  --fundo-da-pagina: #FCFBFA;
+  --fundo-do-card: #E9EEF2;
+  --texto-escuro: #25282D;
+  --texto-claro: #FCFBFA;
+  --linhas-e-bordas: #DCD9D5;
+}
+
+body {
+    background-color:#f7f5f2;
+    color: var(--texto-escuro);
+    font-family: 'Inter', sans-serif;
+}
+
+.barra-topo {
+    background-color: var(--marca-bordo);
+    text-align: right;
+    padding: 10px 20px; 
+}
+
+.btn-bug-link {
+    background-color: #c69ca4; 
+    color: var(--texto-claro);
+    text-decoration: none;
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.75rem;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('img/banner-bisou-travel.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    padding: 0 10%; /* Cria um espaçamento seguro nas laterais */
+}
+
+.hero-conteudo {
+    text-align: left; /* Garante o alinhamento dos textos à esquerda */
+}
+
+.hero-conteudo h1 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 4rem; /* Ajusta o tamanho para ficar imponente como na referência */
+    color: var(--marca-bordo);
+    font-weight: 600;  /* Deixa a fonte elegantemente destacada */
+    margin-bottom: 0px; /* Diminui o espaço entre o título e o subtítulo */
+}
+.hero-conteudo p {
+    font-family: 'Cormorant SC', serif;
+    font-size: 1.2rem; /* Ajusta o tamanho do subtítulo para ser legível e elegante */
+    margin-top: 0px;
+}
+.barra-titulo-busca {
+    background-color: #612E3D;
+    color: var(--texto-claro); 
+    font-size: 0.75rem; 
+    text-align: center;
+    padding: 8px 20px;
+}
+
+.form-viagem {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    background-color: var(--texto-claro);
+    gap: 20px;
+    padding: 30px;
+    border-radius: 24px; 
+    max-width: 600px; 
+    margin: 40px auto; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05); 
+}
+
+.destino {
+    position: relative;
+    left: 50px; 
+}
+
+.campo-grupo input, 
+.campo-grupo select {
+    background-color: var(--fundo-da-pagina);
+    border:2px solid var(--linhas-e-bordas); /* Uma borda fina e discreta */
+    border-radius: 20px;
+    padding: 12px 15px;
+    width: 100%;
+    color: var(--texto-escuro);
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* Garante que a fonte dos inputs seja a Inter */
+    transition: border-color 0.2s ease; /* Transição suave para o efeito de foco */
+}
+
+/* Efeito ao clicar no campo */
+.campo-grupo input:focus, 
+.campo-grupo select:focus {
+    outline: none; /* Remove a linha padrão do navegador */
+    border-color: var(--marca-bordo); /* A borda ganha a cor da marca ao ser selecionada */
+}
+
+.campo-grupo label {
+    display: block;
+    font-size: 1rem;
+    color: var(--marca-bordo);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-family: 'Cormorant SC', serif; /* Garante que a fonte dos labels seja a Cormorant SC */
+}
+
+/*smartphone*/
+.campo-grupo {
+    width: 100%; 
+    margin-bottom: 15px;
+}
+
+.total-width {
+    flex-basis: 100%;
+}
+
+/*tablet*/
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .campo-grupo {
+        width: 48%; 
+        margin-bottom: 15px;
+    }
+}
+
+/*computer*/
+@media screen and (min-width: 1025px) {
+    .campo-grupo {
+        width: 48%; 
+        margin-bottom: 20px;
+    }
+    
+    .campo-grupo.total-width {
+        width: 100%;
+    }
+}
+
+.btn-buscar {
+    background-color: var(--marca-verde); 
+    color: var(--texto-claro);    
+    border-radius: 20px; 
+    border: none;
+    padding: 15px;
+    width: 100%; 
+    font-size: 1.25rem; 
+    font-family: 'Cormorant SC', serif;
+    text-transform: uppercase; 
+    cursor: pointer;
+    text-align: center; 
+}
+
+.btn-buscar:hover {
+    background-color: #4a5a4d; /* Um tom de verde mais escuro para dar contraste */
+}
+
+.btn-bug-cinza {
+    background-color: var(--linhas-e-bordas);
+    cursor: not-allowed;
+    opacity: 0.7; /* Aplica o cinza da paleta */
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha o texto e os links verticalmente ao centro */
+    padding: 10px 10%; /* Adiciona um respiro nas laterais igual ao do banner */
+    background-color: var(--marca-bordo);
+    color: var(--texto-claro);
+    font-size: 0.8rem;
+}
+
+.footer p {
+    margin: 0; /* Remove margens extras do texto do rodapé */
+}
+
+.links-sociais a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    margin-left: 15px; /* Cria um espacinho entre o link do LinkedIn e o do GitHub */
+}
+
+.links-sociais a:hover {
+    color: var(--fundo-do-card); /* Efeito visual ao passar o rato nos links */
+}
+
+.mensagem {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+    width: 100%; /* Garante que ocupa a linha inteira abaixo do botão */
+}
