@@ -1,6 +1,6 @@
 # ✦ Bisou Travel — QA Documentation ✦
 ### Test Cases & Defect Reports
-Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
+Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie) · [LinkedIn](linkedin.com/in/jesse-rother/)
 
 ---
 
@@ -62,6 +62,7 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 **Resultado Obtido:** Mensagem "Formulário enviado com sucesso!" foi exibida com o valor -1 no campo.
 
 **Evidência:**
+
 ![DR01 - Passageiros negativos](../img/dr01-passageiros-negativos.png)
 
 **Prioridade:** High
@@ -109,6 +110,7 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 **Resultado Obtido:** Mensagem "Formulário enviado com sucesso!" foi exibida com cidades iguais selecionadas.
 
 **Evidência:**
+
 ![DR02 - Cidades iguais](../img/dr02-cidades-iguais.png)
 
 **Prioridade:** High
@@ -152,6 +154,7 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 **Resultado Obtido:** O campo "Destino" está deslocado e desalinhado para a direita.
 
 **Evidência:**
+
 ![DR03 - Desalinhamento](../img/dr03-desalinhamento.png)
 
 **Prioridade:** Low
@@ -161,4 +164,4 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 ---
 
 ✦ Documentação elaborada por Jesse Rother 🌸
-QA em formação · [github.com/pink-bowie](https://github.com/pink-bowie)
+QA Studies · [github.com/pink-bowie](https://github.com/pink-bowie)
