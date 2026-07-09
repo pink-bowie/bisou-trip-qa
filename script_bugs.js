@@ -1,3 +1,4 @@
+// ✦ Criado por Jesse Rother
 const campoOrigem = document.querySelector("#origem");
 const campoDestino = document.querySelector("#destino");
 const campoDataIda = document.querySelector("#dataIda");
@@ -9,21 +10,17 @@ const mensagem = document.querySelector("#mensagem");
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
-    btnBuscar.disabled = true; // Desabilita o botão para evitar múltiplos envios
+    btnBuscar.disabled = true; 
     const origem = document.querySelector("#origem").value;
     const destino = document.querySelector("#destino").value;
     const dataIda = document.querySelector("#dataIda").value;
     const dataVolta = document.querySelector("#dataVolta").value;
-    
-    // Linhas de teste para o console:
-    console.log("Origem:", campoOrigem.value);
-    console.log("Destino:", campoDestino.value);
-    console.log("Data Ida:", campoDataIda.value);
-    console.log("Data Volta:", campoDataVolta.value);
 
   if (campoOrigem.value === "" || campoDestino.value === "" || campoDataIda.value === "" || campoDataVolta.value === "") {
     mensagem.textContent = "Preencha todos os campos obrigatórios.";
-    btnBuscar.disabled = false; // Reabilita o botão
+    mensagem.classList.add("erro");
+    mensagem.classList.remove("sucesso");
+    btnBuscar.disabled = false;
     btnBuscar.classList.add('btn-bug-cinza');
 }  
     else {
@@ -38,4 +35,6 @@ formBusca.addEventListener("input", function() {
     btnBuscar.disabled = false; 
     btnBuscar.classList.remove('btn-bug-cinza');
     mensagem.textContent = "";
+    mensagem.classList.remove("erro");
+    mensagem.classList.remove("sucesso");
 });
