@@ -7,6 +7,7 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 ## TC01 — Busca de passagens com dados válidos
 
 **ID:** TC01
+
 **Pré-condições:** Estar na página index.html
 
 **Passos:**
@@ -15,7 +16,9 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 3. Clicar em "Buscar Passagens"
 
 **Resultado Esperado:** Mensagem "Formulário enviado com sucesso!" é exibida.
+
 **Resultado Obtido:** Mensagem "Formulário enviado com sucesso!" foi exibida.
+
 **Status:** ✅ Passou
 
 ---
@@ -23,6 +26,7 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 ## TC02 — "Número de Passageiros" aceita valores negativos
 
 **ID:** TC02
+
 **Pré-condições:** Estar na página bugs.html
 
 **Passos:**
@@ -31,7 +35,9 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 3. Clicar em "Buscar Passagens"
 
 **Resultado Esperado:** O campo não deve aceitar valores menores que 1. O formulário não deve ser enviado.
+
 **Resultado Obtido:** Mensagem "Formulário enviado com sucesso!" foi exibida com o valor -1 no campo.
+
 **Status:** ❌ Falhou
 
 ---
@@ -39,8 +45,11 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 ## DR01 — "Número de Passageiros" aceita valores negativos
 
 **ID:** DR01
+
 **Ambiente:** Chrome 127, Resolução 1920x1080
+
 **Pré-condições:** Estar na página bugs.html
+
 **TC Relacionado:** TC02
 
 **Passos para Reprodução:**
@@ -49,10 +58,14 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 3. Clicar em "Buscar Passagens"
 
 **Resultado Esperado:** O campo não deve aceitar valores menores que 1. O formulário não deve ser enviado.
+
 **Resultado Obtido:** Mensagem "Formulário enviado com sucesso!" foi exibida com o valor -1 no campo.
+
 **Evidência:**
 ![DR01 - Passageiros negativos](../img/dr01-passageiros-negativos.png)
+
 **Prioridade:** High
+
 **Status:** Aberto
 
 ---
@@ -60,6 +73,7 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 ## TC03 — Cidades iguais em "Origem" e "Destino"
 
 **ID:** TC03
+
 **Pré-condições:** Estar na página bugs.html
 
 **Passos:**
@@ -68,7 +82,9 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 3. Clicar em "Buscar Passagens"
 
 **Resultado Esperado:** O sistema deve bloquear a seleção de cidades iguais.
+
 **Resultado Obtido:** Mensagem "Formulário enviado com sucesso!" foi exibida com cidades iguais selecionadas.
+
 **Status:** ❌ Falhou
 
 ---
@@ -76,8 +92,11 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 ## DR02 — Cidades iguais em "Origem" e "Destino"
 
 **ID:** DR02
+
 **Ambiente:** Chrome 127, Resolução 1920x1080
+
 **Pré-condições:** Estar na página bugs.html
+
 **TC Relacionado:** TC03
 
 **Passos para Reprodução:**
@@ -86,10 +105,14 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 3. Clicar em "Buscar Passagens"
 
 **Resultado Esperado:** O sistema deve bloquear a seleção de cidades iguais.
+
 **Resultado Obtido:** Mensagem "Formulário enviado com sucesso!" foi exibida com cidades iguais selecionadas.
+
 **Evidência:**
 ![DR02 - Cidades iguais](../img/dr02-cidades-iguais.png)
+
 **Prioridade:** High
+
 **Status:** Aberto
 
 ---
@@ -97,13 +120,16 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 ## TC04 — Alinhamento incorreto no campo de Destino
 
 **ID:** TC04
+
 **Pré-condições:** Estar na página bugs.html
 
 **Passos:**
 1. Observar a posição do campo "Destino" em relação aos demais campos
 
 **Resultado Esperado:** O campo "Destino" deve estar centralizado e alinhado verticalmente com os demais campos.
+
 **Resultado Obtido:** O campo "Destino" está deslocado e desalinhado para a direita.
+
 **Status:** ❌ Falhou
 
 ---
@@ -111,18 +137,25 @@ Jesse Rother 🌸 · [GitHub](https://github.com/pink-bowie)
 ## DR03 — Alinhamento incorreto no campo de Destino
 
 **ID:** DR03
+
 **Ambiente:** Chrome 127, Resolução 1920x1080
+
 **Pré-condições:** Estar na página bugs.html
+
 **TC Relacionado:** TC04
 
 **Passos para Reprodução:**
 1. Observar a posição do campo "Destino" em relação aos demais campos
 
 **Resultado Esperado:** O campo "Destino" deve estar centralizado e alinhado verticalmente com os demais campos.
+
 **Resultado Obtido:** O campo "Destino" está deslocado e desalinhado para a direita.
+
 **Evidência:**
 ![DR03 - Desalinhamento](../img/dr03-desalinhamento.png)
+
 **Prioridade:** Low
+
 **Status:** Aberto
 
 ---
